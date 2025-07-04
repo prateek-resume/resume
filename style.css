@@ -1,3 +1,5 @@
+
+
 /* General Body & Typography - Aurora Elegant Off-White Theme with Background Image */
 body {
     font-family: 'Open Sans', sans-serif;
@@ -77,6 +79,35 @@ header .tagline {
     margin-top: 5px;
     /* text-shadow removed */
 }
+
+/* UPDATED: Resume Button Style (Now Off-White by default, dark on hover) */
+.resume-button {
+    display: inline-block;
+    margin-top: 25px; /* Space between tagline and button */
+    padding: 12px 25px;
+    background-color: #F2F2F2; /* Elegant Off-White */
+    color: #0a0f18; /* Dark text for contrast */
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, color 0.3s ease; /* Added color to transition */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.resume-button i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.resume-button:hover {
+    background-color: #0a0f18; /* Dark blue/grey from theme on hover */
+    color: #5d9ffc; /* Bright blue text on hover for highlight */
+    transform: translateY(-3px); /* Subtle lift */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4); /* Enhanced shadow on hover */
+    text-decoration: none;
+}
+
 
 /* Navigation - Aurora Elegant Off-White Theme */
 nav {
@@ -413,6 +444,16 @@ footer {
 
     header {
         padding: 30px 0;
+    }
+
+    header .tagline { /* Ensure tagline margin is reset for smaller screens if needed */
+        margin-bottom: 15px; /* Adjust if the button spacing changes */
+    }
+
+    .resume-button {
+        font-size: 1em;
+        padding: 10px 20px;
+        margin-top: 15px; /* Adjust margin for smaller screens */
     }
 
     nav ul {
